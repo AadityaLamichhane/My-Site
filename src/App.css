@@ -1,0 +1,23 @@
+@import "tailwindcss";
+@import "@fontsource/urbanist/100.css";  /* Thin */
+@import "@fontsource/urbanist/200.css";  /* Extra Light */
+@import "@fontsource/urbanist/300.css";  /* Light */
+@import "@fontsource/urbanist/400.css";  /* Regular */
+@import "@fontsource/urbanist/500.css";  /* Medium */
+@import "@fontsource/urbanist/600.css";  /* Semi Bold */
+@import "@fontsource/urbanist/700.css";  /* Bold */
+@import "@fontsource/urbanist/800.css";  /* Extra Bold */
+@import "@fontsource/urbanist/900.css";
+
+@theme{
+  --font-display: "Urbanist", "sans-serif";
+  --font-display: "Urbanist", "sans-serif";
+  --font-weight-thin: 100;
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+  --font-weight-black: 900;
+}
