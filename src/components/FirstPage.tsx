@@ -1,5 +1,5 @@
 import { Component } from "./Component";
-import background from "../src/assets/background.jpg"
+import background from "../assets/background.jpg"
 export const Page2Section = () => {
 	const projectobject = [{
 		title: "Payyay",
@@ -14,12 +14,15 @@ export const Page2Section = () => {
 	}
 	]
 	return <>
-		<div className={`md:h-[120vh] rounded-4xl h-[100vh]   `} style={{
+		<div className={` rounded-xl h-(--my-height) md:h-(--my-height) lg:h-(--lg-height) flex-row md:flex-col  `} style={{
+			'--my-height': `${projectobject.length * 100}vh`,
+			'--md-height': `100vh`,
+			'--lg-height': '130vh',
 			background: `linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.4) ,rgba(0,0,0,0.2)),url(${background})`,
 			backgroundRepeat: 'no-repeat',
 			backgroundSize: "cover",               // ✅ Changed to cover
 			backgroundPosition: "center",
-		}}>
+		} as React.CSSProperties & Record<string, string>}>
 			<div className='flex flex-col  items-start h-full justify-center
           '>
 				<div className='w-full flex   justify-between py-16 px-10'>
@@ -40,6 +43,6 @@ export const Page2Section = () => {
 					})}
 				</div>
 			</div>
-		</div>
+		</div >
 	</>
 }

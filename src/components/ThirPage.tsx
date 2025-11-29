@@ -1,4 +1,4 @@
-import person from "../src/assets/point.png"
+import person from "../assets/point.png"
 export const Page3Section = () => {
 	return (
 		<>
